@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# Virtual Environment (too heavy to upload - 500MB+)
+venv/
+env/
+.venv/
+
+# Database files (contain test data, not needed)
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables (SECURITY - never upload these!)
+.env
+*.env
+
+# AWS credentials (SECURITY)
+.aws/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Temporary diagram generator scripts
+generate_diagram*.py
+
+# Logs
+*.log
+
+# Streamlit cache
+.streamlit/cache/
