@@ -39,5 +39,10 @@ generate_diagram*.py
 # Logs
 *.log
 
-# Streamlit cache
+# Streamlit cache and secrets
 .streamlit/cache/
+.streamlit/secrets.toml
+
+# Frontend local env
+frontend/.env.local
+frontend/.env

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: buseye-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_REGION
+        value: ap-south-1
+      - key: S3_BUCKET_NAME
+        sync: false
+      - key: S3_IMAGES_BUCKET
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+    healthCheckPath: /health
